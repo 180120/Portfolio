@@ -13,9 +13,8 @@
 <script src="jQueryAssets/jquery.ui-1.10.4.accordion.min.js"></script>
 </head>
 
-<body>
-<h1>作品集</h1>
-<p>東北電子専門学校</p>
+<body><h1>Portfolio</h1>
+<p>東北電子専門学校　ゲームクリエーター科　齋地南</p>
 <div id="Tabs1">
   <ul>
     <li><a href="#tabs-1">３ＤＣＧ</a></li>
@@ -23,7 +22,30 @@
     <li><a href="#tabs-3">その他</a></li>
   </ul>
   <div id="tabs-1">
-    <p>コンテンツ 1</p>
+    <p>mayaで制作した３ＤＣＧの作品です</p>
+    <div id="Accordion2">
+	    <h3><a href="#">room</a></h3>
+	    <div>
+	      <p>ゲームのメインメニュー等で背景として使われるような部屋を作りました。
+			  <br>木目や石の模様などテクスチャをイラスト風に描いてUnrealEngineでノーマル、スペキュラ、ラフネスをかけた作品です</p>
+			<br>
+			<br>
+			<img src="image/room1.png" width="1300">
+      </div>
+	    <h3><a href="#">MAP</a></h3>
+	    <div>
+	      <p>ゲーム内で立ち寄る港町をイメージして制作しました。<>細かい凹凸はポリゴンで作らずになるべくテクスチャで描き、ポリゴン数を抑えました。</p>
+			<br>
+			<br>
+		  <img src="image/Map1.jpg" width="1300">
+      </div>
+	    <h3><a href="#">ねんどろいど</a></h3>
+	    <div>
+	      <p>自分の好きなねんどろいどの写真を参考に３ＤＣＧモデル化するという課題で制作した、キングダムハーツの主人公ソラのねんどろいどです。
+			  <br>特徴的な髪の毛なので生え方や重なり方を本物をよく見ながら再現しました。</p>
+			<br><img src="image/sora1.png" width="1300">
+      </div>
+    </div>
   </div>
   <div id="tabs-2">
     <p>コンテンツ 2</p>
@@ -47,12 +69,16 @@
 	    <p>コンテンツ 3</p>
   </div>
 </div>
+	
 <script type="text/javascript">
 $(function() {
 	$( "#Tabs1" ).tabs(); 
 });
 $(function() {
 	$( "#Accordion1" ).accordion(); 
+});
+$(function() {
+	$( "#Accordion2" ).accordion(); 
 });
 </script>
 </body>
