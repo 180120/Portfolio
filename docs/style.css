@@ -1,7 +1,8 @@
 @charset "utf-8";
 
 body{
-    background-color: #DFF0F0;
+    background-image: url("image/background-pattern.jpg");
+	background-repeat:repeat-x
 }
 h1{
 	text-align: center;
