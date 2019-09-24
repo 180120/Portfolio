@@ -7,50 +7,49 @@
 <link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
 <link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
 <link href="jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
-<link href="jQueryAssets/jquery.ui.accordion.min.css" rel="stylesheet" type="text/css">
 <script src="jQueryAssets/jquery-1.11.1.min.js"></script>
 <script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
-<script src="jQueryAssets/jquery.ui-1.10.4.accordion.min.js"></script>
 </head>
 
 <body><h1><img src="image/Portfolio_logo.png" width="400" class="logo">
 <br>東北電子専門学校　ゲームクリエーター科　齋地南</h1>
 <div id="Tabs1">
+	
   <ul>
     <li><a href="#tabs-1">プロフィール</a></li>
     <li><a href="#tabs-2">３ＤＣＧ</a></li>
     <li><a href="#tabs-3">デッサン</a></li>
     <li><a href="#tabs-4">その他</a></li>
   </ul>
-  <div id="tabs-2">
-    <h1>mayaで制作した３ＤＣＧの作品</h1>
-    <div id="Accordion2">
-	    <h3><a href="#">room</a></h3>
-	    <div>
-	      <p>ゲームのメインメニュー等で背景として使われるような部屋を作りました。
-			  <br>木目や石の模様などテクスチャをイラスト風に描いてUnrealEngineでノーマル、スペキュラ、ラフネスをかけた作品です</p>
-			<br>
-			<br>
-			<p><img src="image/room1.png" width="900"></p>
-      </div>
-	    <h3><a href="#">MAP</a></h3>
-	    <div>
-	      <p>ゲーム内で立ち寄る港町をイメージして制作しました。
-			  <br>細かい凹凸はポリゴンで作らずになるべくテクスチャで描き、ポリゴン数を抑えました。</p>
-			<br>
-			<br>
-		  <p><img src="image/Map1.jpg" width="900"></p>
-      </div>
-	    <h3><a href="#">ねんどろいど</a></h3>
-	    <div>
-	      <p>自分の好きなねんどろいどの写真を参考に３ＤＣＧモデル化するという課題で制作した、キングダムハーツの主人公ソラのねんどろいどです。
-			  <br>特徴的な髪の毛なので生え方や重なり方を本物をよく見ながら再現しました。</p>
-			<p><br><img src="image/sora1.png" width="500"></p>
-      </div>
-    </div>
-  </div>
+  <div id="tabs-2"> 
+	  <h1>3DCGソフトのＭＡＹＡを使用して制作した作品です</h1>
+	  <br>
+	  <h2>-ROOM-</h2>
+	  <p>mayaでモデルを作りPhotoshopでイラストライクになるようにテクスチャを仕上げました。
+	  <br>レンダリングはUnrealEngineを使用してノーマル、スペキュラ、ラフネスをかけました。</p>
+	  <p><img src="image/room1.png" width="900" class="3dcg"></p>
+	  <br>
+	  <h2>-TOWN-</h2>
+	  <p>RPGに出てくるような港町をイメージして制作しました。
+	  <br>壁のレンガや屋根の石、窓まで全てテクスチャで描いて作りました。</p>
+	  <p><img src="image/Map1.jpg" width="900" class="3dcg"></p>
+	  <br>
+	  <h2>-SORA-</h2>
+	  <p>キングダムハーツシリーズ主人公のソラのねんどろいどを制作しました。
+	  <br>特徴的なトゲトゲの髪の毛を再現することを頑張りました。</p>
+	  <p><img src="image/sora1.png" width="600" class="3dcg"></p>
+	</div>
   <div id="tabs-1">
-    <p>プロフィール</p>
+	  <div id="image1">
+		  <p><img src="image/human.png" width="250" height="250"></p>
+		  <h2>齋地　南
+		  <br>東北電子専門学校　ゲームクリエーター科
+			  <br>1999/4/23 おうし座
+			  <br>
+			  <br>使用できるソフト
+			  <p><img src="image/icon.png" width="500"></p>
+		  </h2>
+	  </div>
   </div>
   <div id="tabs-3">
     <h1>制作した静物デッサン</h1>
@@ -71,9 +70,9 @@ $(function() {
 $(function() {
 	$( "#Accordion1" ).accordion(); 
 });
-$(function() {
-	$( "#Accordion2" ).accordion(); 
-});
 </script>
 </body>
 </html>
+<div id="footer">
+	<p>&copy;Copyright 180120. All rights reserved.</p>
+	</div>
